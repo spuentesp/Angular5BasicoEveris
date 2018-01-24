@@ -1,0 +1,23 @@
+<form ng-submit="guardar()">
+  <table>
+    <tr>
+      <td>
+        nombre
+      </td>
+      <td>
+        <input type="text" ngModel ngControl="nombre" #nombre name="nombre" placeholder="Nombre" minlength="1" maxlength="30"
+                    pattern="[0-9a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"  [(ngModel)]="user.nombre" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        apellido
+      </td>
+      <td>
+        <input type="text" ngModel ngControl="nombre" #nombre name="nombre" placeholder="Nombre" minlength="1" maxlength="30"
+        pattern="[0-9a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"  [(ngModel)]="user.apellido" required>
+      </td>
+    </tr>
+  </table>
+
+</form>
